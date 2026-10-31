@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>你要畢業了嗎 · 論文、口試與離校</title><meta name="description" content="以來源為依據的本機校園文件查詢原型。"><link rel="stylesheet" href="/app.css"><script src="/app.js" defer></script></head>
+<body data-view="welcome"><a class="skip-link" href="#main">跳至主要內容</a>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="主要導覽">
+    <a class="brand" href="/" aria-label="你要畢業了嗎首頁"><span class="brand-mark" aria-hidden="true">畢<span>↗</span></span><span class="brand-name">你要畢業了嗎<small>GRADUATION GUIDE</small></span></a>
+    <button id="new-query" class="new-query" aria-label="新增聊天"><span aria-hidden="true">＋</span><span>新增聊天</span><kbd>⌘ K</kbd></button>
+    <div class="sidebar-copy"><span class="eyebrow">THE GRADUATION EDITION</span><p>給每一個，<br>準備翻開<br>下一頁的你。</p><span class="side-section">§ 01 — 你的對話</span></div>
+    <nav id="chat-list" class="chat-list" aria-label="本次聊天列表"></nav><p class="memory-scope">記憶僅限本次服務開啟期間</p><div id="session-title" class="session-title" hidden><span class="eyebrow">目前查詢</span><p id="session-question"></p></div>
+    <div class="sidebar-bottom"><button id="scope-button" class="nav-button" aria-label="服務範圍與限制"><span aria-hidden="true">◫</span><span>服務範圍與限制</span></button><div class="project-label"><span class="status-dot"></span><span>本機混合檢索・來源查證<small>非官方專案，非校方系統</small></span></div></div>
+  </aside>
+  <main id="main" class="main-panel" tabindex="-1">
+    <header class="topbar"><div class="masthead"><strong>你要畢業了嗎</strong><span class="topbar-tag">論文・口試・離校</span></div><ol class="workflow-track" aria-label="對話流程"><li data-stage="ask" aria-current="step"><span>01</span> 提問</li><li data-stage="answer"><span>02</span> 整理</li><li data-stage="source"><span>03</span> 核對</li></ol><button id="sources-toggle" class="sources-toggle" aria-controls="source-panel" aria-expanded="false">來源面板 <span id="source-count">0</span></button></header>
+    <div id="conversation" class="conversation" aria-live="polite" aria-relevant="additions text">
+      <section id="welcome" class="welcome">
+        <div class="edition-line"><span>FOR THE NEXT CHAPTER</span><span>論文 / 口試 / 離校</span></div>
+        <div class="editorial-hero">
+          <svg class="paint-art" viewBox="0 0 1000 440" preserveAspectRatio="none" aria-hidden="true"><defs><filter id="paint-rough"><feTurbulence type="fractalNoise" baseFrequency=".026 .11" numOctaves="3" seed="12" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g filter="url(#paint-rough)"><path class="paint-blue" d="M114 86 Q329 56 513 108 T884 102"/><path class="paint-red" d="M-60 295 Q194 233 397 286 T716 265 T1080 211"/><path class="paint-yellow" d="M74 400 Q410 374 721 404 T1057 374"/></g><circle cx="887" cy="35" r="8" fill="#C03A29"/><circle cx="45" cy="342" r="4" fill="#253BA0"/><circle cx="953" cy="328" r="3" fill="#222018"/></svg>
+          <div class="hero-heading"><span class="hero-pretitle" lang="en">The next chapter.</span><h1>你要畢業了嗎<span>？</span></h1><p class="hero-subtitle">— 下一步，一起弄清楚 —</p></div>
+          <div class="hero-note"><span class="note-marker">¶ 001<br>THE QUESTION</span><div><p>別讓一份論文，<br>卡在一個沒問清楚的問題。</p><span>把問題交給我，依來源整理給你。 ↗</span></div></div>
+        </div>
+        <div class="entry-heading"><span>§ 02 — 從這裡開始</span><span>選一個問題，或直接在下方提問 ↓</span></div>
+        <div class="editorial-entry">
+          <div class="example-grid" aria-label="示例問題">
+            <button data-example="碩士論文紙本要交幾本給圖書館？" data-topic="copies"><span>01 / 論文繳交</span><strong>紙本，要交幾本？</strong><b aria-hidden="true">↗</b></button>
+            <button data-example="論文封面顏色有規定嗎？" data-topic="cover"><span>02 / 格式規定</span><strong>封面，該用什麼顏色？</strong><b aria-hidden="true">↗</b></button>
+            <button data-example="我的論文只有60頁，可以單面列印嗎？" data-topic="print"><span>03 / 列印方式</span><strong>60 頁，可以單面印嗎？</strong><b aria-hidden="true">↗</b></button>
+            <button data-example="論文要申請延後公開，什麼時候提出？" data-topic="delay"><span>04 / 版本查證</span><strong>延後公開，何時提出？</strong><b aria-hidden="true">↗</b></button>
+          </div>
+          <figure class="folio-preview" aria-label="書頁與論文的原創裝飾插畫">
+            <svg class="folio-drawing" viewBox="0 0 300 310" role="img" aria-label="打開的書與研究筆記插畫"><defs><pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 5L5 0" stroke="#222018" stroke-width=".35" opacity=".25"/></pattern></defs><path d="M47 250L174 278L267 226L145 205Z" fill="#222018" opacity=".08"/><g class="folio-pages"><path d="M41 126L149 154L254 109L260 217L153 267L43 234Z" fill="#222018"/><path d="M43 120L149 147L252 102L254 207L152 255L43 224Z" fill="#EFE6D0" stroke="#222018" stroke-width="1.5"/><path d="M149 147L152 255M48 216L151 246L247 203M48 211L151 241L247 198M48 206L151 236L247 193" stroke="#222018" fill="none" stroke-width=".7"/><path d="M43 110Q94 98 149 140Q192 92 252 96L252 195Q194 192 152 239Q108 202 43 210Z" fill="#F6EFDF" stroke="#222018" stroke-width="1.5"/><path d="M149 140L152 239" stroke="#222018" stroke-width="1"/><path d="M55 130Q99 126 135 150M55 140Q99 137 135 160M55 150Q99 147 135 170M55 160Q99 157 135 180M55 170Q99 167 135 190M55 180Q99 177 135 200M166 147Q199 116 237 114M166 157Q199 126 237 124M166 167Q199 136 237 134M166 177Q199 146 237 144M166 187Q199 156 237 154M166 197Q199 166 237 164M166 207Q199 176 237 174" fill="none" stroke="#222018" stroke-width=".65" opacity=".5"/></g><path d="M97 56L200 38L210 96L107 114Z" fill="url(#hatch)" stroke="#222018"/><path d="M113 72L186 59M115 79L181 67M117 86L188 73" stroke="#222018" stroke-width=".7"/><path d="M98 55L200 37" stroke="#C03A29" stroke-width="4"/><circle cx="246" cy="67" r="16" fill="#253BA0" opacity=".9"/><path d="M26 264Q73 262 104 276" fill="none" stroke="#E8B23A" stroke-width="8"/></svg>
+            <figcaption><span class="folio-caption">把規定翻開，把疑問放下。</span><span>AN OPEN BOOK, A CLEARER NEXT STEP.</span></figcaption>
+          </figure>
+        </div><span class="example-caption">示例問題，非官方建議 · 所有答案都應回到來源核對</span>
+      </section>
+      <section id="thread" class="thread" hidden></section>
+      <section id="scope-view" class="scope-view" hidden></section>
+      <section id="route-error" class="route-error" hidden></section>
+    </div>
+    <div class="composer-area"><div class="composer-heading"><span>¶ YOUR QUESTION</span><span>一個問題，接著一個問題。</span></div><p id="memory-status" class="memory-status" hidden></p><div id="request-error" class="request-error" role="alert" hidden></div><form id="query-form" class="composer"><label class="sr-only" for="question">輸入關於論文與離校的問題</label><textarea id="question" rows="2" placeholder="現在，想先弄清楚什麼？" aria-describedby="composer-help"></textarea><div class="composer-bottom"><span id="input-count">0 / 200</span><div><span class="keyboard-hint">Shift + Enter 換行</span><button id="send" class="send-button" type="submit" aria-label="送出問題" disabled>↑</button></div></div></form><p id="composer-help" class="composer-help">每個聊天獨立記憶 · 依命中原文整理 · 未使用生成式 AI 回答</p><p class="disclaimer">非官方專案，非校方系統。最終以各單位公告為準。<span id="data-date"></span></p></div>
+  </main>
+  <aside id="source-panel" class="source-panel" aria-label="來源與原文" hidden><header><div><span class="eyebrow">§ 03 — THE SOURCE</span><h2>來源與原文</h2></div><button id="close-sources" class="icon-button" aria-label="收合來源面板">×</button></header><div id="source-content" class="source-content"><p class="empty-source">開啟回答中的引用，<br>在這裡核對原文。</p></div></aside>
+</div><noscript>此本機介面需要啟用 JavaScript；目前可查詢範圍為研究生論文與離校共通規定。</noscript></body></html>

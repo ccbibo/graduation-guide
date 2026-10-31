@@ -1,0 +1,67 @@
+{
+  "origin": "Official Google Fonts repositories and fonts.gstatic.com; local assets, no runtime font network",
+  "fonts": [
+    {
+      "file": "font-0.ttf",
+      "url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd58jDOjw.ttf",
+      "bytes": 293036,
+      "sha256": "0b9a8a33cfaa624d30f70f9b6686da769b319b8c37a55af16e29fef690108bbf"
+    },
+    {
+      "file": "font-1.ttf",
+      "url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_v86GnM.ttf",
+      "bytes": 290236,
+      "sha256": "6d37a86241a25d63f8fe6018b4c083449886b7165c1acb15edd0f574f690ecf7"
+    },
+    {
+      "file": "font-2.ttf",
+      "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_Vx1w.ttf",
+      "bytes": 68312,
+      "sha256": "0ab2fcacedaafc0a7536453d4a763f131ba83a636706d3ec2d685cf04478a920"
+    },
+    {
+      "file": "font-3.ttf",
+      "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2K_c.ttf",
+      "bytes": 70348,
+      "sha256": "c03775f8cc3db88cfea259b231abe13f94e6a3d3cb01c09477a2e42a1f5919e1"
+    },
+    {
+      "file": "font-4.ttf",
+      "url": "https://fonts.gstatic.com/s/spacemono/v17/i7dPIFZifjKcF5UAWdDRUEY.ttf",
+      "bytes": 81124,
+      "sha256": "829aad32ab9525358de2a7ebc718d05a6b335e67421aad5e1e09cd1fa796af4e"
+    },
+    {
+      "file": "font-5.ttf",
+      "url": "https://fonts.gstatic.com/s/spacemono/v17/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf",
+      "bytes": 79904,
+      "sha256": "5be2b984cdb8befc8ad1871d10f1aa8337f7d2bae3c6bf0ce720d0745ac1a8ec"
+    },
+    {
+      "file": "noto-serif-tc.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoseriftc/NotoSerifTC%5Bwght%5D.ttf",
+      "bytes": 16851596,
+      "sha256": "0077e18f57c6908f4a000969880940bdb0dad057c0e8d98b49dc364c3d1b09c6"
+    }
+  ],
+  "licenses": [
+    {
+      "file": "web/fonts/cormorantgaramond-OFL.txt",
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "file": "web/fonts/dmserifdisplay-OFL.txt",
+      "sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231"
+    },
+    {
+      "file": "web/fonts/notoseriftc-OFL.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+    },
+    {
+      "file": "web/fonts/spacemono-OFL.txt",
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f"
+    }
+  ],
+  "chinese_font": "Noto Serif TC variable 200–900; full Traditional Chinese font, no lossy glyph subset",
+  "runtime_csp": "Unchanged; explicit local font whitelist only"
+}
