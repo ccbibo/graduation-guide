@@ -6,6 +6,8 @@
 
 ![產品落地頁](docs/images/product-landing.png)
 
+**[開啟線上產品展示 ↗](https://ccbibo.github.io/graduation-guide/)** · 公開版為固定示例與介面導覽。
+
 ## 先看什麼
 
 - **產品展示**：`static/index.html`，可切換三個回答示例、展開文件引文。
